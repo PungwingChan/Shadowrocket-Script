@@ -1,4 +1,4 @@
-#!url=http://script.hub/file/_start_/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.qxrewrite/_end_/tieba_signin.sgmodule?type=qx-rewrite&target=shadowrocket-module&del=true
+#!url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.qxrewrite/_end_/tieba_signin.sgmodule?type=qx-rewrite&target=shadowrocket-module&del=true
 #!name=百度贴吧
 #!desc=获取百度贴吧签到需要的各项参数
 
