@@ -1,0 +1,9 @@
+#!url=http://script.hub/file/_start_/https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/aliiyun.conf/_end_/aliiyun.sgmodule?type=qx-rewrite&target=shadowrocket-module&del=true
+#!name=阿里云盘
+#!desc=获取阿里云盘签到需要的各项参数
+
+[Script]
+aliyun = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% auth.alipan.com, auth.aliyundrive.com
