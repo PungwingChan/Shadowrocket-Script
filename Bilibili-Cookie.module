@@ -1,11 +1,11 @@
-#!name=Bilibili
-#!desc=用于获取哔哩哔哩任务所需各项参数
+#!url=http://script.hub/file/_start_/https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/bilibili.conf/_end_/bilibili.sgmodule?type=qx-rewrite&target=shadowrocket-module&del=true
+#!name=哔哩哔哩
+#!desc=获取哔哩哔哩任务需要的各项参数
 
 [Script]
-# 获取哔哩哔哩任务需要的各项参数
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, requires-body=true, timeout=60, binary-body-mode=true
+BiliBili = type=http-request, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\?, script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, binary-body-mode=true, timeout=60
 
-http-request ^https?:\/\/m\.bilibili\.com\/$ script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, requires-body=true, timeout=60, binary-body-mode=true
+BiliBili = type=http-request, pattern=^https?:\/\/m.bilibili.com/$, script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, binary-body-mode=true, timeout=60
 
 [MITM]
-hostname = app.bilibili.com, m.bilibili.com
+hostname = %APPEND% app.bilibili.com, m.bilibili.com
